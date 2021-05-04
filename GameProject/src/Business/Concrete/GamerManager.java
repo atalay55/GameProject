@@ -3,14 +3,15 @@ package Business.Concrete;
 import Adaptor.Mernis.MernisCheckManager;
 import Business.Abstract.GamerService;
 import DataAccess.Abstract.MemoryDataBaseCustomerdal;
+import DataAccess.Abstract.MemoryDataBaseGamerDal;
 import Entities.Concrete.Gamer;
 
 public class GamerManager implements GamerService{
 
-	MemoryDataBaseCustomerdal customerDal;
+	MemoryDataBaseGamerDal customerDal;
 	MernisCheckManager checkManager;
 
-	public GamerManager(MemoryDataBaseCustomerdal customerDal,MernisCheckManager checkManager) {
+	public GamerManager(MemoryDataBaseGamerDal customerDal,MernisCheckManager checkManager) {
 		super();
 		this.customerDal = customerDal;
 		this.checkManager=checkManager;

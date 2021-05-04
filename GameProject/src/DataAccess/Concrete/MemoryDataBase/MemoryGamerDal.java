@@ -1,25 +1,26 @@
 package DataAccess.Concrete.MemoryDataBase;
+import DataAccess.Abstract.MemoryDataBaseGamerDal;
+import Entities.Concrete.Gamer;
 
-import DataAccess.Abstract.MemoryDataBaseCustomerdal;
-import Entities.Abstract.Customer;
 
-public class MemoryGamerDal implements MemoryDataBaseCustomerdal  {
+public class MemoryGamerDal implements MemoryDataBaseGamerDal  {
 
+	
 	@Override
-	public void add(Customer customer) {
-		System.out.println(customer+"  "+"eklendi");
+	public void add(Gamer gamer) {
+		System.out.println(gamer.getName()+"  "+"eklendi");
 		
 	}
 
 	@Override
-	public void delete(Customer customer) {
-		System.out.println(customer+"  "+"silindi");
+	public void delete(Gamer gamer) {
+		System.out.println(gamer.getName()+"  "+"silindi");
 		
 	}
 
 	@Override
-	public void update(Customer customer) {
-		System.out.println(customer+"  "+"guncellendi");
+	public void update(Gamer gamer) {
+		System.out.println(gamer.getName()+"  "+"guncellendi");
 		
 	}
 	

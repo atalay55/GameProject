@@ -12,6 +12,7 @@ public class CompanyManager implements CustomerService {
 		this.customerDal = customerDal;
 	}
 
+
 	@Override
 	public void add(Customer customer) {
 		customerDal.add(customer);

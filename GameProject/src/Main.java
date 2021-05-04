@@ -1,13 +1,13 @@
 import java.sql.Date;
 
 import Adaptor.Mernis.MernisCheckManager;
+import Business.Abstract.GamerService;
 import Business.Concrete.GameManager;
 import Business.Concrete.GamerManager;
 import Business.Concrete.SaleManager;
-import DataAccess.Abstract.MemoryDataBaseCustomerdal;
+import DataAccess.Abstract.MemoryDataBaseGamerDal;
 import DataAccess.Concrete.MemoryDataBase.MemoryGameDal;
 import DataAccess.Concrete.MemoryDataBase.MemoryGamerDal;
-import Entities.Abstract.Customer;
 import Entities.Concrete.Company;
 import Entities.Concrete.Gamer;
 
@@ -23,8 +23,6 @@ public class Main {
 		gamer.setLastName("");
 		gamer.setBirthOfDate(new Date(2000));
 		gamer.setCustomerNu(1568642);
-		
-		
 		
 		Company company = new Company();
 		company.setId(2);
